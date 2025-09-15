@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So Long, Farewell!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(-45deg, #e0e7ff, #c7d2fe, #a5b4fc, #818cf8);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-800 { animation-delay: 0.8s; }
+        .delay-1000 { animation-delay: 1s; }
+
+    </style>
+</head>
+<body class="text-slate-800 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto px-4 py-8 md:py-16 text-center bg-white/70 backdrop-blur-sm rounded-2xl shadow-2xl max-w-3xl">
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-2 fade-in-up">So Long & Farewell</h1>
+            <p class="text-lg md:text-xl text-slate-600 fade-in-up delay-200">...and thanks for being the best part of the job.</p>
+        </header>
+        <main>
+            <section class="max-w-2xl mx-auto mb-10">
+                <p class="text-lg leading-relaxed fade-in-up delay-400">
+                    As my last day gets closer, I've been thinking about all the little things that made my time here so special. It wasn't the projects or the meetings, but the moments in between. The coffee runs that turned into strategy sessions, the ridiculously intense debates about what to order for lunch, and the inside jokes that I'll probably still be laughing about years from now.
+                </p>
+                <p class="text-lg leading-relaxed mt-4 fade-in-up delay-600">
+                    It's the people that make a place, and you are all truly the best. I'm going to miss our team's dynamic more than I can say. Thank you for being such amazing colleagues and friends. I can't wait to see all the incredible things you all do next.
+                </p>
+            </section>
+        </main>
+        <footer class="mt-12 text-slate-500 fade-in-up delay-800">
+            <p>Wishing you all the absolute best.</p>
+        </footer>
+    </div>
+</body>
+</html>
